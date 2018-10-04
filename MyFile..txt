@@ -1,1 +1,18 @@
-My 30 Days React Challenge
+#creating a new app using react CDN
+##Now to create our React app with CDN we have to follow these steps
+<!--
+1. Create an html boiler plate
+2. add React CDN 
+3. Create a div with some ID in html document.
+4. Create a script tag for our react code.
+
+How this work?
+we use javascript classes(oops) concept.
+we create a a class with some name and extends React.Component class. In this class we use render function which render one root element. NOTE -that we can only return one root node if we return more then one it wont work. So we write our JSX code which we want to return to our DIV element which we create above.(div with id app).
+If we run this codenow it wont work as browser dont understand JSX code so we use babel for this. we use babel cdn and add type="text/babel" in our script tag.
+
+What is the point?
+If we are making a static website there is no point of using react. React is mainly used for dynamic content. such as we used Math.random() function to randomly inserting code in our app.
+
+ReactDom.render(<App />,document.getElementById());
+this function takes two parameter one is our component and other one is our target site which is div with id app
