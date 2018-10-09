@@ -1,45 +1,4 @@
-# Event Handling in React
-If we want to perform a perticular task on click or hover we use events.
-events are any javascript code which get executed on some event. Event 
-function call is done using function calling in {} braces.
-NOTE: we cannot acess state in event.
-
-some of the many events:=
-Clipboard Events
-Composition Events
-Keyboard Events
-Focus Events
-Form Events
-Mouse Events
-Pointer Events
-Selection Events
-Touch Events
-UI Events
-Wheel Events
-Media Events
-Image Events
-Animation Events
-Transition Events
-
-NOTE: now if we look at our code and see that we cannot use state in our dom events 
-because there this keyword dont have their scope. so to solve this we use arrow function.
-
-BEFORE:
-handleClick(e){
-                console.log(this.state);
-                 
-            }
-
-After:
-handleClick=(e)=>{
-                //console.log(e.target);
-                 
-            }
-
------------------------------------CHANGING STATE----------------------------------------------
-handleClick=(e)=>{                              // changing the state on onclick function
-                //console.log(e.target);
-                this.setState({
-                    name: 'meenakshi'
-                });
-            }
+# Forms in react
+This one shows how  we can use forms and do some cool this like 
+change the text on go.
+preventDefault()// this function is used to save the state and note refreshing the page
