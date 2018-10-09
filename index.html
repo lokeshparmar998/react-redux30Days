@@ -19,9 +19,11 @@
                 name: "Lokesh",
                 age: 20
             }
-            handleClick(e){
+            handleClick = (e) => {
                 //console.log(e.target);
-                 
+                this.setState({
+                    name: "meenakshi"
+                });
             }
             myMouse(e){
                 console.log(e.target);

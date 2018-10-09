@@ -20,3 +20,26 @@ Media Events
 Image Events
 Animation Events
 Transition Events
+
+NOTE: now if we look at our code and see that we cannot use state in our dom events 
+because there this keyword dont have their scope. so to solve this we use arrow function.
+
+BEFORE:
+handleClick(e){
+                console.log(this.state);
+                 
+            }
+
+After:
+handleClick=(e)=>{
+                //console.log(e.target);
+                 
+            }
+
+-----------------------------------CHANGING STATE----------------------------------------------
+handleClick=(e)=>{                              // changing the state on onclick function
+                //console.log(e.target);
+                this.setState({
+                    name: 'meenakshi'
+                });
+            }
