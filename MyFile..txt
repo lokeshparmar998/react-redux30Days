@@ -15,4 +15,4 @@ What is the point?
 If we are making a static website there is no point of using react. React is mainly used for dynamic content. such as we used Math.random() function to randomly inserting code in our app.
 
 ReactDom.render(<App />,document.getElementById());
-this function takes two parameter one is our component and other one is our target site which is div with id app
+this function takes two parameter one is our component and other one is our target site which is div with id app 
