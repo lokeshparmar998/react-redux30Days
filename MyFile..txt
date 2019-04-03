@@ -14,5 +14,8 @@ If we run this codenow it wont work as browser dont understand JSX code so we us
 What is the point?
 If we are making a static website there is no point of using react. React is mainly used for dynamic content. such as we used Math.random() function to randomly inserting code in our app.
 
+We have used babel which is used to convert jsx into html code(javascript code into the html inside the div)
+for this we have used babel cdn. 
+
 ReactDom.render(<App />,document.getElementById());
 this function takes two parameter one is our component and other one is our target site which is div with id app 
