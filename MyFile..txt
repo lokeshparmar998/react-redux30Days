@@ -1,19 +1,31 @@
 My 30 Days React Challenge
 
-CLI command:
-npx create-react-app <nameof the app>
-cd <name of the app>
-npm start // to start the sserver
+Props:
+Props are way to pass data from parent component to the child component
+in our example we have App.js as our parent and subComp is our child component
 
-Nesting component:
-To nest a component with another one is pretty simple 
-first you have to create a new javascript file.
-import react and component and create a new class
-note: alwasy keep the class name in caps.
+for props we need to pass the props from parent to the child in the nesting
+and then recive them in the child component.
 
-then export the file and import it in the root file 
-and use it <'name of the component' />
-and your nesting is done.
+we use props to make our application dynamic. each time we can pass
+different data.
 
-in this App.js is our root component and subComp.js is nested component.
+passing the list of props:
+to pass the list of the props we need to create state from which we will pass the 
+list of props.
 
+after passing the list we need to cycle through the list for whic we will use map function
+this map function will retrun a jsx snippt which we will store in a const and then output in
+the render.
+
+function:
+ const {detail }= this.props; // note: use these {} for props otherwise error
+        const detailList =detail.map(make1 => {
+            return (
+                <div className="details" key={make1.id}>
+                <h1>Name:{make1.name}</h1> 
+                <h1>Age:{make1.age}</h1> 
+                <h1>place:{make1.place}</h1> 
+                </div>
+            )
+        })
