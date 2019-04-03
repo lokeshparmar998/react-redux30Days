@@ -2,3 +2,18 @@ My 30 Days React Challenge
 
 CLI command:
 npx create-react-app <nameof the app>
+cd <name of the app>
+npm start // to start the sserver
+
+Nesting component:
+To nest a component with another one is pretty simple 
+first you have to create a new javascript file.
+import react and component and create a new class
+note: alwasy keep the class name in caps.
+
+then export the file and import it in the root file 
+and use it <'name of the component' />
+and your nesting is done.
+
+in this App.js is our root component and subComp.js is nested component.
+
