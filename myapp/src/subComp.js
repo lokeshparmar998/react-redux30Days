@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Sub extends Component{
-    render(){
-        const {detail }= this.props; // note: use these {} for props otherwise error
+const Sub = (props)=> {
+    // we can de structure the props by const Sub = ({details}) =>{  then we wont need the line below
+       const {detail }= props; //we dont need this as we are passing props and not using the instance.
         const detailList =detail.map(make1 => {
             return (
                 <div className="details" key={make1.id}>
@@ -12,18 +12,13 @@ class Sub extends Component{
                 </div>
             )
         })
-        {/*console.log(this.props);
-        const {name,age,place}=this.props;  destruct props*/}
         return(
             <div className="sub">
-              { /* <h1>Name:</h1> <p>{name}</p> <br/> 
-                <h1>Age:</h1> <p>{age}</p> <br/> 
-                <h1>place:</h1> <p>{this.props.place}</p> <br/> */}
                 {
                     detailList
                 }
             </div> 
         );
-    } 
+  
 }
 export default Sub;

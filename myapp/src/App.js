@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <h1>Hello world
         </h1>
-          {/* <Sub name="Lokesh" age="20" place="gurgaon"/>  */} 
+          {/* <Sub name="Lokesh" age="20" place="gurgaon"/>  => used for sending props*/} 
           <Sub detail={this.state.details}/>
       </div>
     );
