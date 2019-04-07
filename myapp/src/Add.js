@@ -19,7 +19,7 @@ class Add extends Component{
     render()
     {
         return(
-            <div>
+            <div className="lokesh">
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" onChange={this.handleChane}/>
