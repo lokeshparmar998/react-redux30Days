@@ -1,8 +1,14 @@
 My 30 Days React Challenge
 
-Stateless component:
-now stateless component are those which dont have their own state.
-they get their data or props from other component.
-
-so we dont need class for those we can use function.
-we dont need classes so we need to pass props.
+Working with forms:
+So in this we are working with forms we use onChange and on onSubmit function to handle events
+and save them to the state of that component. we use setState function to add the input data to the 
+state of the component.
+[e.target.id]:e.target.value is used to add the input data to the state of the component.
+e.preventDefault() is used to prevent the default behavior
+===============================================================================================
+now to send the recived state to the main component we need to pass a function as an props so that
+we can us this function to send the state of Add component to the App component.
+So we passed the function as prop and call it from Add component and pass the state of that component to
+the function and recived that state in our App component. now create a new array of object like this:
+let details = [...this.state.details,Details] and used setState function to add it to this state component.

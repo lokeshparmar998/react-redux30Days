@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Sub from'./subComp';
+import Add from './Add';
 class App extends Component {
   state={
     details:[
@@ -8,6 +9,13 @@ class App extends Component {
       {name: 'Rohit',age:21,place:'jhajjar',id:3}
     ]
   }
+  AddDetails = (Details) =>{
+    Details.id= Math.random();
+    let details = [...this.state.details,Details]
+    this.setState({
+      details:details
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -15,6 +23,7 @@ class App extends Component {
         </h1>
           {/* <Sub name="Lokesh" age="20" place="gurgaon"/>  => used for sending props*/} 
           <Sub detail={this.state.details}/>
+          <Add AddDetails={this.AddDetails}/>
       </div>
     );
   }
